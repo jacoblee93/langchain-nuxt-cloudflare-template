@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     // Useful for debugging
     minify: false,
     commands: {
-      preview: 'npx wrangler dev ./server/index.mjs --site ./public --remote'
+      preview: 'npx wrangler dev ./server/index.mjs --site ./public --remote --port 3000'
     }
   },
   css: ["~/assets/css/style.css"],
