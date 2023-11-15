@@ -4,12 +4,9 @@
   "type": "module",
   "scripts": {
     "build": "NITRO_PRESET=cloudflare-module nuxt build",
-    "dev": "npx wrangler dev .output/server/index.mjs --site .output/public --remote",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "pages:dev": "wrangler pages dev --compatibility-date=2023-10-30 --proxy 3000 & npm run dev",
-    "pages:deploy": "npm run build && wrangler pages deploy ./dist"
+    "dev": "nuxt dev",
+    "preview": "npx wrangler dev .output/server/index.mjs --site .output/public --remote",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
