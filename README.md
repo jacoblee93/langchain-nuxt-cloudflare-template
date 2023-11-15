@@ -4,28 +4,40 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ## Setup
 
-1. Install dependencies:
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Create vectorize
+Create a Vectorize index:
 
 ```bash
 npx wrangler vectorize create langchain_js_nuxt --dimensions 768 --metric cosine
 ```
 
-3. Copy `.dev.vars.example` to `.dev.vars` and fill in the tokens
+Copy `.dev.vars.example` to `.dev.vars` and fill in the tokens:
 
-4. Build project
+```ini
+# https://platform.openai.com/api-keys
+OPENAI_API_KEY=
+
+# https://dash.cloudflare.com/
+CLOUDFLARE_ACCOUNT_ID=
+
+# https://developers.cloudflare.com/workers-ai/get-started/rest-api/
+CLOUDFLARE_WORKERSAI_API_TOKEN=
+```
+
+Build project:
 
 ```bash
 npm run build
 ```
 
-5. Start in preview mode
+Start in preview mode:
 
 ```bash
 npm run preview
 ```
+
