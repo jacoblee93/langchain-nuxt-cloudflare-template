@@ -8,7 +8,11 @@ export default defineNuxtConfig({
     transpile: ['vuetify'],
   },
   nitro: {
-    minify: false // Useful for debugging
+    // Useful for debugging
+    minify: false,
+    commands: {
+      preview: 'npx wrangler dev ./server/index.mjs --site ./public --remote'
+    }
   },
   css: ["~/assets/css/style.css"],
   modules: [
