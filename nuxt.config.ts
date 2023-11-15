@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify'],
   },
+  nitro: {
+    minify: false // Useful for debugging
+  },
   css: ["~/assets/css/style.css"],
   modules: [
     (_options, nuxt) => {
